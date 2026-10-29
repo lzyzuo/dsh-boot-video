@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Boot Animation",
+    "description": "Plays a full-screen cinematic video once when the Web UI opens, then fades into the interface. Click or press Esc to skip. Rendered as its own overlay above the wallpaper layer, so it never touches the wallpaper plugin's state."
+  }
+}

@@ -1,0 +1,6 @@
+- insert:
+    - id: boot-animation
+      name: '@local/dsh-boot-animation'
+      config:
+        enabled: true
+        sound: true

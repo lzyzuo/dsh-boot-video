@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "开机动画",
+    "description": "打开 Web 界面时全屏播放一段过场视频，播完淡出进入主界面。点击或按 Esc 可跳过。作为独立浮层渲染在壁纸层之上，不读写壁纸插件的任何状态，因此与 dsh-plugin-wallpaper-engine 完全兼容。"
+  }
+}

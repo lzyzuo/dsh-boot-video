@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Boot animation">
+  <defs>
+    <linearGradient id="bga" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070c16"/>
+      <stop offset="1" stop-color="#16243d"/>
+    </linearGradient>
+    <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fc4ff"/>
+      <stop offset="1" stop-color="#e8c37a"/>
+    </linearGradient>
+    <radialGradient id="bgl" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#2f6fd0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2f6fd0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="256" height="256" rx="58" fill="url(#bga)"/>
+  <rect width="256" height="256" rx="58" fill="url(#bgl)"/>
+
+  <!-- screen frame -->
+  <rect x="44.5" y="72.5" width="167" height="94" rx="14"
+        fill="rgba(10,16,28,0.55)" stroke="rgba(255,255,255,0.34)" stroke-width="3"/>
+
+  <!-- play mark -->
+  <path d="M112 100l42 20.5-42 20.5z" fill="url(#bgg)"/>
+
+  <!-- progress track + fill -->
+  <rect x="44" y="190" width="168" height="8" rx="4" fill="rgba(255,255,255,0.14)"/>
+  <rect x="44" y="190" width="104" height="8" rx="4" fill="url(#bgg)"/>
+</svg>

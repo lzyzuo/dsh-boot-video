@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# 视频素材：本仓库不分发视频（版权 + 体积），只保留目录占位
+media/*.mp4
+media/*.webm
+media/*.mov
+media/*.mkv
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志与临时文件
+*.log
+*.tmp
+.vscode/
+.idea/

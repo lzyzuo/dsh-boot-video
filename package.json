@@ -1,0 +1,56 @@
+{
+  "name": "@local/dsh-boot-animation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Full-screen cinematic boot video for the DeepSeek Harness Web UI: plays once per app start, skippable, and compatible with the wallpaper plugin.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "boot-animation",
+    "splash-screen",
+    "startup-video",
+    "wallpaper-engine"
+  ],
+  "license": "MIT",
+  "author": "20411",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzyzuo/dsh-boot-video.git"
+  },
+  "homepage": "https://github.com/lzyzuo/dsh-boot-video#readme",
+  "bugs": {
+    "url": "https://github.com/lzyzuo/dsh-boot-video/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "media/boot.mp4"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
